@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D5C9BAF1F59C64500039968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BAE1F59C64500039968 /* AppDelegate.swift */; };
+		2D5C9BB11F59C64500039968 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB01F59C64500039968 /* ViewController.swift */; };
+		2D5C9BB41F59C64500039968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB21F59C64500039968 /* Main.storyboard */; };
+		2D5C9BB71F59C64500039968 /* eyeView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB51F59C64500039968 /* eyeView.xcdatamodeld */; };
+		2D5C9BB91F59C64500039968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB81F59C64500039968 /* Assets.xcassets */; };
+		2D5C9BBC1F59C64500039968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5C9BBA1F59C64500039968 /* LaunchScreen.storyboard */; };
+		2D5C9BC71F59C64500039968 /* eyeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BC61F59C64500039968 /* eyeViewTests.swift */; };
+		2D5C9BD21F59C64500039968 /* eyeViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BD11F59C64500039968 /* eyeViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D5C9BC31F59C64500039968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5C9BA31F59C64500039968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D5C9BAA1F59C64500039968;
+			remoteInfo = eyeView;
+		};
+		2D5C9BCE1F59C64500039968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D5C9BA31F59C64500039968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D5C9BAA1F59C64500039968;
+			remoteInfo = eyeView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D5C9BAB1F59C64500039968 /* eyeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5C9BAE1F59C64500039968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D5C9BB01F59C64500039968 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D5C9BB31F59C64500039968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D5C9BB61F59C64500039968 /* eyeView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eyeView.xcdatamodel; sourceTree = "<group>"; };
+		2D5C9BB81F59C64500039968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D5C9BBB1F59C64500039968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D5C9BBD1F59C64500039968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5C9BC21F59C64500039968 /* eyeViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eyeViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5C9BC61F59C64500039968 /* eyeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyeViewTests.swift; sourceTree = "<group>"; };
+		2D5C9BC81F59C64500039968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5C9BCD1F59C64500039968 /* eyeViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eyeViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5C9BD11F59C64500039968 /* eyeViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyeViewUITests.swift; sourceTree = "<group>"; };
+		2D5C9BD31F59C64500039968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D5C9BA81F59C64500039968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5C9BBF1F59C64500039968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5C9BCA1F59C64500039968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D5C9BA21F59C64500039968 = {
+			isa = PBXGroup;
+			children = (
+				2D5C9BAD1F59C64500039968 /* eyeView */,
+				2D5C9BC51F59C64500039968 /* eyeViewTests */,
+				2D5C9BD01F59C64500039968 /* eyeViewUITests */,
+				2D5C9BAC1F59C64500039968 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D5C9BAC1F59C64500039968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D5C9BAB1F59C64500039968 /* eyeView.app */,
+				2D5C9BC21F59C64500039968 /* eyeViewTests.xctest */,
+				2D5C9BCD1F59C64500039968 /* eyeViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D5C9BAD1F59C64500039968 /* eyeView */ = {
+			isa = PBXGroup;
+			children = (
+				2D5C9BAE1F59C64500039968 /* AppDelegate.swift */,
+				2D5C9BB01F59C64500039968 /* ViewController.swift */,
+				2D5C9BB21F59C64500039968 /* Main.storyboard */,
+				2D5C9BB81F59C64500039968 /* Assets.xcassets */,
+				2D5C9BBA1F59C64500039968 /* LaunchScreen.storyboard */,
+				2D5C9BBD1F59C64500039968 /* Info.plist */,
+				2D5C9BB51F59C64500039968 /* eyeView.xcdatamodeld */,
+			);
+			path = eyeView;
+			sourceTree = "<group>";
+		};
+		2D5C9BC51F59C64500039968 /* eyeViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D5C9BC61F59C64500039968 /* eyeViewTests.swift */,
+				2D5C9BC81F59C64500039968 /* Info.plist */,
+			);
+			path = eyeViewTests;
+			sourceTree = "<group>";
+		};
+		2D5C9BD01F59C64500039968 /* eyeViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D5C9BD11F59C64500039968 /* eyeViewUITests.swift */,
+				2D5C9BD31F59C64500039968 /* Info.plist */,
+			);
+			path = eyeViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D5C9BAA1F59C64500039968 /* eyeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5C9BD61F59C64500039968 /* Build configuration list for PBXNativeTarget "eyeView" */;
+			buildPhases = (
+				2D5C9BA71F59C64500039968 /* Sources */,
+				2D5C9BA81F59C64500039968 /* Frameworks */,
+				2D5C9BA91F59C64500039968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eyeView;
+			productName = eyeView;
+			productReference = 2D5C9BAB1F59C64500039968 /* eyeView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D5C9BC11F59C64500039968 /* eyeViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5C9BD91F59C64500039968 /* Build configuration list for PBXNativeTarget "eyeViewTests" */;
+			buildPhases = (
+				2D5C9BBE1F59C64500039968 /* Sources */,
+				2D5C9BBF1F59C64500039968 /* Frameworks */,
+				2D5C9BC01F59C64500039968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5C9BC41F59C64500039968 /* PBXTargetDependency */,
+			);
+			name = eyeViewTests;
+			productName = eyeViewTests;
+			productReference = 2D5C9BC21F59C64500039968 /* eyeViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D5C9BCC1F59C64500039968 /* eyeViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5C9BDC1F59C64500039968 /* Build configuration list for PBXNativeTarget "eyeViewUITests" */;
+			buildPhases = (
+				2D5C9BC91F59C64500039968 /* Sources */,
+				2D5C9BCA1F59C64500039968 /* Frameworks */,
+				2D5C9BCB1F59C64500039968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5C9BCF1F59C64500039968 /* PBXTargetDependency */,
+			);
+			name = eyeViewUITests;
+			productName = eyeViewUITests;
+			productReference = 2D5C9BCD1F59C64500039968 /* eyeViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D5C9BA31F59C64500039968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Portia Sharma";
+				TargetAttributes = {
+					2D5C9BAA1F59C64500039968 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = B2278J6LL2;
+						ProvisioningStyle = Automatic;
+					};
+					2D5C9BC11F59C64500039968 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = B2278J6LL2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D5C9BAA1F59C64500039968;
+					};
+					2D5C9BCC1F59C64500039968 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = B2278J6LL2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D5C9BAA1F59C64500039968;
+					};
+				};
+			};
+			buildConfigurationList = 2D5C9BA61F59C64500039968 /* Build configuration list for PBXProject "eyeView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D5C9BA21F59C64500039968;
+			productRefGroup = 2D5C9BAC1F59C64500039968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D5C9BAA1F59C64500039968 /* eyeView */,
+				2D5C9BC11F59C64500039968 /* eyeViewTests */,
+				2D5C9BCC1F59C64500039968 /* eyeViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D5C9BA91F59C64500039968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5C9BBC1F59C64500039968 /* LaunchScreen.storyboard in Resources */,
+				2D5C9BB91F59C64500039968 /* Assets.xcassets in Resources */,
+				2D5C9BB41F59C64500039968 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5C9BC01F59C64500039968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5C9BCB1F59C64500039968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D5C9BA71F59C64500039968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5C9BB11F59C64500039968 /* ViewController.swift in Sources */,
+				2D5C9BAF1F59C64500039968 /* AppDelegate.swift in Sources */,
+				2D5C9BB71F59C64500039968 /* eyeView.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5C9BBE1F59C64500039968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5C9BC71F59C64500039968 /* eyeViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5C9BC91F59C64500039968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5C9BD21F59C64500039968 /* eyeViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D5C9BC41F59C64500039968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D5C9BAA1F59C64500039968 /* eyeView */;
+			targetProxy = 2D5C9BC31F59C64500039968 /* PBXContainerItemProxy */;
+		};
+		2D5C9BCF1F59C64500039968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D5C9BAA1F59C64500039968 /* eyeView */;
+			targetProxy = 2D5C9BCE1F59C64500039968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D5C9BB21F59C64500039968 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5C9BB31F59C64500039968 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D5C9BBA1F59C64500039968 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5C9BBB1F59C64500039968 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D5C9BD41F59C64500039968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D5C9BD51F59C64500039968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D5C9BD71F59C64500039968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B2278J6LL2;
+				INFOPLIST_FILE = eyeView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2D5C9BD81F59C64500039968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B2278J6LL2;
+				INFOPLIST_FILE = eyeView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2D5C9BDA1F59C64500039968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B2278J6LL2;
+				INFOPLIST_FILE = eyeViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eyeView.app/eyeView";
+			};
+			name = Debug;
+		};
+		2D5C9BDB1F59C64500039968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B2278J6LL2;
+				INFOPLIST_FILE = eyeViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eyeView.app/eyeView";
+			};
+			name = Release;
+		};
+		2D5C9BDD1F59C64500039968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B2278J6LL2;
+				INFOPLIST_FILE = eyeViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = eyeView;
+			};
+			name = Debug;
+		};
+		2D5C9BDE1F59C64500039968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B2278J6LL2;
+				INFOPLIST_FILE = eyeViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = eyeView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D5C9BA61F59C64500039968 /* Build configuration list for PBXProject "eyeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5C9BD41F59C64500039968 /* Debug */,
+				2D5C9BD51F59C64500039968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5C9BD61F59C64500039968 /* Build configuration list for PBXNativeTarget "eyeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5C9BD71F59C64500039968 /* Debug */,
+				2D5C9BD81F59C64500039968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D5C9BD91F59C64500039968 /* Build configuration list for PBXNativeTarget "eyeViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5C9BDA1F59C64500039968 /* Debug */,
+				2D5C9BDB1F59C64500039968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D5C9BDC1F59C64500039968 /* Build configuration list for PBXNativeTarget "eyeViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5C9BDD1F59C64500039968 /* Debug */,
+				2D5C9BDE1F59C64500039968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D5C9BB51F59C64500039968 /* eyeView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D5C9BB61F59C64500039968 /* eyeView.xcdatamodel */,
+			);
+			currentVersion = 2D5C9BB61F59C64500039968 /* eyeView.xcdatamodel */;
+			path = eyeView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D5C9BA31F59C64500039968 /* Project object */;
+}
