@@ -8,88 +8,110 @@
 
 import UIKit
 
-class ResultsTableViewController: UITableViewController {
+class ResultsTableViewController: UITableViewController, ESTNearableManagerDelegate {
 
+    var nearableManager = ESTNearableManager()
+    var nearables = [ESTNearable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        nearables = []
+        nearableManager = ESTNearableManager()
+        nearableManager.delegate = self
+        nearableManager.startRanging(for: ESTNearableType.all)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    func nearableManager(_ manager: ESTNearableManager, didRangeNearables nearables: [ESTNearable], with type: ESTNearableType) {
+        self.nearables = nearables
+        print(nearables)
+        //        print(ESTNearableDefinitions.name(for: nearables[0].type as ESTNearableType))
+        //print("Type: \(ESTNearableDefinitions.name(for: nearable.type)) RSSI: \(nearable.rssi)")
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return nearables.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! ESTTableViewCell
+        
+        let nearable = nearables[indexPath.row] as ESTNearable
+        let windowName  = "\(ESTNearableDefinitions.name(for: nearable.type as ESTNearableType))"
+        
+        cell.textLabel?.text = "\(windowName.capitalized) : \(nearable.identifier)"
+        cell.detailTextLabel?.text = "RSSI: \(nearable.rssi)"
+        
+        let imageView = UIImageView(frame: CGRect(x: self.view.frame.size.width - 60, y: 30, width: 30, height: 30))
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.image = self.imageForNearableType(type: nearable.type)
+        cell.contentView.addSubview(imageView)
+        
         return cell
     }
-    */
+    
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    
+    // MARK: - Utility methods
+    
+    func imageForNearableType(type: ESTNearableType) -> UIImage?
+    {
+        switch (type)
+        {
+        case ESTNearableType.bag:
+            return  UIImage(named: "sticker_bag")
+        case ESTNearableType.bike:
+            return UIImage(named: "sticker_bike")
+        case ESTNearableType.car:
+            return UIImage(named: "sticker_car")
+        case ESTNearableType.fridge:
+            return UIImage(named: "sticker_fridge")
+        case ESTNearableType.bed:
+            return UIImage(named: "sticker_bed")
+        case ESTNearableType.chair:
+            return UIImage(named: "sticker_chair")
+        case ESTNearableType.shoe:
+            return UIImage(named: "sticker_shoe")
+        case ESTNearableType.door:
+            return UIImage(named: "sticker_door")
+        case ESTNearableType.dog:
+            return UIImage(named: "sticker_dog")
+        default:
+            return UIImage(named: "sticker_grey")
+        }
     }
-    */
+    
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+}
 
+
+class ESTTableViewCell: UITableViewCell
+{
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

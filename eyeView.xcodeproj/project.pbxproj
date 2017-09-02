@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D5C9BAF1F59C64500039968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BAE1F59C64500039968 /* AppDelegate.swift */; };
-		2D5C9BB11F59C64500039968 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB01F59C64500039968 /* ViewController.swift */; };
 		2D5C9BB41F59C64500039968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB21F59C64500039968 /* Main.storyboard */; };
 		2D5C9BB71F59C64500039968 /* eyeView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB51F59C64500039968 /* eyeView.xcdatamodeld */; };
 		2D5C9BB91F59C64500039968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5C9BB81F59C64500039968 /* Assets.xcassets */; };
@@ -16,8 +15,6 @@
 		2D5C9BC71F59C64500039968 /* eyeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BC61F59C64500039968 /* eyeViewTests.swift */; };
 		2D5C9BD21F59C64500039968 /* eyeViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BD11F59C64500039968 /* eyeViewUITests.swift */; };
 		2D5C9BE01F59C6DE00039968 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BDF1F59C6DE00039968 /* ResultsTableViewController.swift */; };
-		2D5C9BE21F59F15D00039968 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BE11F59F15C00039968 /* Model.swift */; };
-		2D5C9BE61F59F19900039968 /* Estimote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5C9BE51F59F19900039968 /* Estimote.swift */; };
 		3DC6D7262CB46F0B470735CD /* Pods_eyeViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A281D35C9CD11BB7B86CD5C /* Pods_eyeViewUITests.framework */; };
 		74DC8B70F0B5907CE72DCEFE /* Pods_eyeViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB64DFD9EADF2D8DCC7CCDAC /* Pods_eyeViewTests.framework */; };
 		D85A774E5D46B9469BA8E668 /* Pods_eyeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0659D06298E130095956B58 /* Pods_eyeView.framework */; };
@@ -45,7 +42,6 @@
 		169F8CDC205B14008EF290DB /* Pods-eyeViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eyeViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eyeViewUITests/Pods-eyeViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D5C9BAB1F59C64500039968 /* eyeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5C9BAE1F59C64500039968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D5C9BB01F59C64500039968 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D5C9BB31F59C64500039968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D5C9BB61F59C64500039968 /* eyeView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eyeView.xcdatamodel; sourceTree = "<group>"; };
 		2D5C9BB81F59C64500039968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 		2D5C9BD11F59C64500039968 /* eyeViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyeViewUITests.swift; sourceTree = "<group>"; };
 		2D5C9BD31F59C64500039968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D5C9BDF1F59C6DE00039968 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
-		2D5C9BE11F59F15C00039968 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		2D5C9BE51F59F19900039968 /* Estimote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estimote.swift; sourceTree = "<group>"; };
 		2D5C9BE71F59F3E900039968 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		4A281D35C9CD11BB7B86CD5C /* Pods_eyeViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eyeViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5F3E7B4CCA57AEBA8040CA /* Pods-eyeViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eyeViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eyeViewUITests/Pods-eyeViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,9 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				2D5C9BAE1F59C64500039968 /* AppDelegate.swift */,
-				2D5C9BE51F59F19900039968 /* Estimote.swift */,
-				2D5C9BE11F59F15C00039968 /* Model.swift */,
-				2D5C9BB01F59C64500039968 /* ViewController.swift */,
 				2D5C9BDF1F59C6DE00039968 /* ResultsTableViewController.swift */,
 				2D5C9BB21F59C64500039968 /* Main.storyboard */,
 				2D5C9BB81F59C64500039968 /* Assets.xcassets */,
@@ -468,10 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D5C9BE21F59F15D00039968 /* Model.swift in Sources */,
 				2D5C9BE01F59C6DE00039968 /* ResultsTableViewController.swift in Sources */,
-				2D5C9BB11F59C64500039968 /* ViewController.swift in Sources */,
-				2D5C9BE61F59F19900039968 /* Estimote.swift in Sources */,
 				2D5C9BAF1F59C64500039968 /* AppDelegate.swift in Sources */,
 				2D5C9BB71F59C64500039968 /* eyeView.xcdatamodeld in Sources */,
 			);
@@ -630,10 +618,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B2278J6LL2;
 				INFOPLIST_FILE = eyeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$[eyeView}/ObjCBridge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/portiasharma/Data/iOS/Coding_Exercises/eyeView/eyeView/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -645,10 +634,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B2278J6LL2;
 				INFOPLIST_FILE = eyeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$[eyeView}/ObjCBridge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/portiasharma/Data/iOS/Coding_Exercises/eyeView/eyeView/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
