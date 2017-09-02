@@ -59,7 +59,7 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         let nearableName  = "\(ESTNearableDefinitions.name(for: nearable.type as ESTNearableType))"
         
         //cell.textLabel?.text = "\(windowName.capitalized) : \(nearable.identifier)"
-        cell.stickerTypeIDLabel.text = "\(nearableName.capitalized) : \(nearable.identifier))"
+        cell.stickerTypeIDLabel.text = "\(nearableName.capitalized) (\(nearable.identifier))"
         //cell.detailTextLabel?.text = "RSSI: \(nearable.rssi)"
         cell.stickerStrengthLabel.text = "\(nearable.rssi)dB"
         //let imageView = UIImageView(frame: CGRect(x: 25, y: 25, width: 50, height: 50))
