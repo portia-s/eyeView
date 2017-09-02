@@ -9,7 +9,7 @@
 import UIKit
 
 class ResultsTableViewController: UITableViewController, ESTNearableManagerDelegate {
-
+    
     var nearableManager = ESTNearableManager()
     var nearables = [ESTNearable]()
     
@@ -56,15 +56,17 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! ESTTableViewCell
         
         let nearable = nearables[indexPath.row] as ESTNearable
-        let windowName  = "\(ESTNearableDefinitions.name(for: nearable.type as ESTNearableType))"
+        let nearableName  = "\(ESTNearableDefinitions.name(for: nearable.type as ESTNearableType))"
         
-        cell.textLabel?.text = "\(windowName.capitalized) : \(nearable.identifier)"
-        cell.detailTextLabel?.text = "RSSI: \(nearable.rssi)"
-        
-        let imageView = UIImageView(frame: CGRect(x: self.view.frame.size.width - 60, y: 30, width: 30, height: 30))
-        imageView.contentMode = UIViewContentMode.scaleAspectFill
-        imageView.image = self.imageForNearableType(type: nearable.type)
-        cell.contentView.addSubview(imageView)
+        //cell.textLabel?.text = "\(windowName.capitalized) : \(nearable.identifier)"
+        cell.stickerTypeIDLabel.text = "\(nearableName.capitalized) : \(nearable.identifier))"
+        //cell.detailTextLabel?.text = "RSSI: \(nearable.rssi)"
+        cell.stickerStrengthLabel.text = "\(nearable.rssi)dB"
+        //let imageView = UIImageView(frame: CGRect(x: 25, y: 25, width: 50, height: 50))
+        //imageView.contentMode = UIViewContentMode.scaleAspectFill
+        //imageView.image = self.imageForNearableType(type: nearable.type as ESTNearableType)
+        //cell.contentView.addSubview(imageView)
+        cell.stickerImage.image = self.imageForNearableType(type: nearable.type as ESTNearableType)
         
         return cell
     }
@@ -100,7 +102,7 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         case ESTNearableType.dog:
             return UIImage(named: "sticker_dog")
         default:
-            return UIImage(named: "sticker_grey")
+            return UIImage(named: "sticker_blank")
         }
     }
     
@@ -114,4 +116,7 @@ class ESTTableViewCell: UITableViewCell
         super.init(coder: aDecoder)
     }
 
+    @IBOutlet weak var stickerImage: UIImageView!
+    @IBOutlet weak var stickerTypeIDLabel: UILabel!
+    @IBOutlet weak var stickerStrengthLabel: UILabel!
 }
