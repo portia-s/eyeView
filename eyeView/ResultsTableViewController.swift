@@ -16,15 +16,14 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
     
     let sections = ["NEARBY (less than 2m)", "FAR AWAY (more than 2m)"]
     
+    //initialize arrays, setup managers & delegates and start ranging
     override func viewDidLoad() {
         super.viewDidLoad()
-
         nearables = []
         nearablesSorted = [[],[]]
         nearableManager = ESTNearableManager()
         nearableManager.delegate = self
         nearableManager.startRanging(for: ESTNearableType.all)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,15 +31,14 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         // Dispose of any resources that can be recreated.
     }
     
-
+    //get and sort nearables; reload tableview
     func nearableManager(_ manager: ESTNearableManager, didRangeNearables nearables: [ESTNearable], with type: ESTNearableType) {
         self.nearables = nearables
         sortNearables(allNearables: nearables)
-        //print(nearables)
         self.tableView.reloadData()
     }
     
-    // MARK: - Table view data source
+    // MARK: - Table view data source and delegates
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -85,8 +83,9 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
     }
     
     
-    // MARK: - Utility methods
+    // MARK: - Custom methods
     
+    //choose nearable image for cell
     func imageForNearableType(type: ESTNearableType) -> UIImage?
     {
         switch (type)
@@ -114,6 +113,7 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         }
     }
     
+    //sort nearables into near & far
     func sortNearables(allNearables: [ESTNearable]) {
         nearablesSorted = [[],[]]
         for nearable in nearables {
