@@ -12,11 +12,15 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
     
     var nearableManager = ESTNearableManager()
     var nearables = [ESTNearable]()
+    var nearablesSorted = [[ESTNearable]]()
+    
+    let sections = ["NEARBY (less than 2m)", "FAR AWAY (more than 2m)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         nearables = []
+        nearablesSorted = [[],[]]
         nearableManager = ESTNearableManager()
         nearableManager.delegate = self
         nearableManager.startRanging(for: ESTNearableType.all)
@@ -31,9 +35,8 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
 
     func nearableManager(_ manager: ESTNearableManager, didRangeNearables nearables: [ESTNearable], with type: ESTNearableType) {
         self.nearables = nearables
-        print(nearables)
-        //        print(ESTNearableDefinitions.name(for: nearables[0].type as ESTNearableType))
-        //print("Type: \(ESTNearableDefinitions.name(for: nearable.type)) RSSI: \(nearable.rssi)")
+        sortNearables(allNearables: nearables)
+        //print(nearables)
         self.tableView.reloadData()
     }
     
@@ -41,12 +44,23 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return sections.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return nearables.count
+        switch section {
+        case 0:
+            return nearablesSorted[0].count
+        case 1:
+            return nearablesSorted[1].count
+        default:
+            return nearables.count
+        }
     }
 
     
@@ -55,17 +69,11 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         // Configure the cell...
         let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! ESTTableViewCell
         
-        let nearable = nearables[indexPath.row] as ESTNearable
+        let nearable = nearablesSorted[indexPath.section][indexPath.row] as ESTNearable
         let nearableName  = "\(ESTNearableDefinitions.name(for: nearable.type as ESTNearableType))"
         
-        //cell.textLabel?.text = "\(windowName.capitalized) : \(nearable.identifier)"
         cell.stickerTypeIDLabel.text = "\(nearableName.capitalized) (\(nearable.identifier))"
-        //cell.detailTextLabel?.text = "RSSI: \(nearable.rssi)"
         cell.stickerStrengthLabel.text = "\(nearable.rssi)dB"
-        //let imageView = UIImageView(frame: CGRect(x: 25, y: 25, width: 50, height: 50))
-        //imageView.contentMode = UIViewContentMode.scaleAspectFill
-        //imageView.image = self.imageForNearableType(type: nearable.type as ESTNearableType)
-        //cell.contentView.addSubview(imageView)
         cell.stickerImage.image = self.imageForNearableType(type: nearable.type as ESTNearableType)
         
         return cell
@@ -106,7 +114,18 @@ class ResultsTableViewController: UITableViewController, ESTNearableManagerDeleg
         }
     }
     
-
+    func sortNearables(allNearables: [ESTNearable]) {
+        nearablesSorted = [[],[]]
+        for nearable in nearables {
+            if nearable.rssi >= -85 {
+                nearablesSorted[0].append(nearable)
+            }
+            else {
+                nearablesSorted[1].append(nearable)
+            }
+        }
+    }
+    
 }
 
 

@@ -17,9 +17,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>EyeView uses Bluetooth to detect Estimote nearables.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>EyeView uses Location Services to detect Estimote nearables.</string>
 	<key>UIBackgroundModes</key>
