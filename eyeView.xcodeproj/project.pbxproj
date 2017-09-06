@@ -622,7 +622,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/portiasharma/Data/iOS/Coding_Exercises/eyeView/eyeView/ObjCBridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = eyeView/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -638,7 +638,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ipaycheck.eyeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/portiasharma/Data/iOS/Coding_Exercises/eyeView/eyeView/ObjCBridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = eyeView/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
